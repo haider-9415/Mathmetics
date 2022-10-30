@@ -67,5 +67,20 @@ int main(){
         i2++;
     }
     cout<<"Sum of the series: "<<ans1;
+    
+    
+    // Sequence of 1,4,9,....n and Sum of its series
+    int input,power=1;
+    cout<<"Enter a no. n \n";
+    cin>>input;
+    cout<<"sequence: ";
+    for (int i = 1; i <= input; i++)
+    {
+        int sum=0;
+        sum=i*i;
+        cout<<sum<<",";
+        power+=i*i;
+    }
+    cout<<endl<<"Sum of series: "<<power;
 
 }
